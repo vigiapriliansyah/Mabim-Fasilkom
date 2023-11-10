@@ -1,0 +1,36 @@
+
+
+body{
+    margin:0px;
+}
+
+nav{
+    background-color: aqua;
+    overflow: hidden;
+    margin-top: 1px;
+}
+
+nav a{
+    color:royalblue;
+    text-decoration: none;
+    float: right;
+    padding: 20px;
+}
+
+nav a:hover{
+    color:blue;
+    text-decoration: none;
+    float: right;
+    padding: 20px;
+    background-color: white;
+}
+
+nav img{
+    display: block;
+    float: left; /* Apply 'float: left;' to the image */
+    margin-right: 10px;
+    
+}
+
+
+

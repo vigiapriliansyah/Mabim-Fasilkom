@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            background-image: url(https://blog.depositphotos.com/wp-content/uploads/2017/07/Soothing-nature-backgrounds-2.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card {
+            background-color: rgba(255, 255, 255, 0.7);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.);
+            border-radius: 15px;
+            padding: 20px;
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .form-control {
+            background-color: rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(10px);
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .btn-login {
+            width: 60%;
+            font-size: 0.9rem;
+            letter-spacing: 0.05rem;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-login:hover {
+            animation: pulse 1.5s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                background-color: #333;
+            }
+
+            50% {
+                background-color: rgba(128, 128, 128, 0.8);
+            }
+
+            100% {
+                background-color: #333;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <h3 class="judul">Login</h3>
+        <form name="login">
+            <div class="form-floating">
+                <input type="text" class="form-control" name="username" placeholder="Username">
+            </div>
+            <div>
+                <input type="password" class="form-control" name="password" placeholder="Password">
+            </div>
+            <input name="login" class="btn-login" type="submit" value="Login" onclick="Login()"></input>
+            <input class="btn-login" type="button" value="Kembali"  onclick="Kembali()" style="margin-top: 5px;"></input>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
